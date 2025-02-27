@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://cipj22efo24jv"]
+
+[ext_resource type="Script" path="res://Scenes/title_screen.gd" id="1_31to7"]
+[ext_resource type="Script" path="res://Scenes/label_2.gd" id="2_2kvvc"]
+[ext_resource type="Script" path="res://Scenes/timer.gd" id="2_ax80a"]
+[ext_resource type="Script" path="res://Scenes/label.gd" id="2_fwenw"]
+[ext_resource type="Script" path="res://Scenes/label_3.gd" id="3_tdojy"]
+
+[node name="TitleScreen" type="Node2D"]
+script = ExtResource("1_31to7")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 544.0
+offset_top = 271.0
+offset_right = 584.0
+offset_bottom = 294.0
+text = "Time: Morning"
+script = ExtResource("2_fwenw")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 679.0
+offset_top = 273.0
+offset_right = 719.0
+offset_bottom = 296.0
+text = "HH"
+script = ExtResource("2_2kvvc")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 707.0
+offset_top = 273.0
+offset_right = 747.0
+offset_bottom = 296.0
+text = "MM"
+script = ExtResource("3_tdojy")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+script = ExtResource("2_ax80a")

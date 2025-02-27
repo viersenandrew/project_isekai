@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://cipj22efo24jv"]
+
+[ext_resource type="Script" path="res://Scenes/timeKeeping.gd" id="1_7gynw"]
+[ext_resource type="Script" path="res://Scenes/label.gd" id="2_wfqub"]
+[ext_resource type="Script" path="res://Scenes/label_2.gd" id="3_jqmhr"]
+[ext_resource type="Script" path="res://Scenes/label_3.gd" id="4_6dl8v"]
+[ext_resource type="Script" path="res://Scenes/timer.gd" id="5_rbdo6"]
+
+[node name="TimeKeeping" type="Node2D"]
+script = ExtResource("1_7gynw")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 544.0
+offset_top = 271.0
+offset_right = 584.0
+offset_bottom = 294.0
+text = "Time: Morning"
+script = ExtResource("2_wfqub")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 679.0
+offset_top = 273.0
+offset_right = 719.0
+offset_bottom = 296.0
+text = "HH"
+script = ExtResource("3_jqmhr")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 707.0
+offset_top = 273.0
+offset_right = 747.0
+offset_bottom = 296.0
+text = "MM"
+script = ExtResource("4_6dl8v")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+autostart = true
+script = ExtResource("5_rbdo6")
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

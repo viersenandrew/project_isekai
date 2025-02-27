@@ -1,0 +1,9 @@
+res://Scenes/TitleScreen.tscn
+res://Scenes/title_screen.gd
+res://node_2d.tscn
+res://Scenes/timer.gd
+res://Scenes/label_2.gd
+res://Scenes/label_3.gd
+res://Scenes/label.gd
+res://Scenes/timeKeeping.tscn
+res://Scenes/timeKeeping.gd
